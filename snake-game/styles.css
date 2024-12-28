@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.board {
+    width: 402px;
+    height: 402px;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    border: 1px solid lightgray;
+    margin: 64px auto 0;
+    transition: all .2s;
+}
+.cell {
+    background-color: white;
+}
+.snake {
+    background-color: green
+}
+.apple {
+    background-color: red;
+}
